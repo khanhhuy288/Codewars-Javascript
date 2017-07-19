@@ -1,14 +1,5 @@
 function accum(s) {
-	var n = 0;
-	return s.split('').map(function (x) {
-		n++;
-		return charClone(x, n); 
-	}).join('-');
-}
-
-function charClone(c, n) {
-	var result = c.toLowerCase().repeat(n);
-	return result.charAt(0).toUpperCase() + result.slice(1);
+  return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
 }
     
 console.log(accum("ZpglnRxqenU")); 			// "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu"
