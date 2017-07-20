@@ -12,4 +12,4 @@
 // console.log(rowSumOddNumbers(42));			// 74088
 var array = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21];
 var n = 3;
-console.log(array.slice(n - 2));
+console.log(array.slice());
