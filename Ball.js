@@ -13,3 +13,5 @@ ball2 = new Ball1("super");
 
 console.log(ball1.ballType);     //=> "regular"
 console.log(ball2.ballType);     //=> "super"
+
+console.log('abc'.slice(-1));
