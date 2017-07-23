@@ -1,8 +1,9 @@
 function listToArray(list) {
-  var result = []; 
-
-  
-  return result;  
+  var result = [];
+  result.push(list.value);
+  if (list.next !== null)
+  	result = result.concat(listToArray(list.next));
+  return result;
 }
 
 var list1 = {value: 1, next: {value: 2, next: {value: 3, next: null}}};
