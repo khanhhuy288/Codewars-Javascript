@@ -2,8 +2,8 @@ function babel(height) {
   var output = ''; 
   for (var i = 0, j = height - 1, k = 1; i < height; i++) {
   	output += (' '.repeat(j) + 'o'.repeat(k) + '\n').repeat(3);
-  	k += 2;
   	j--;
+  	k += 2;
   }
   return output.slice(0, -1);
 }
